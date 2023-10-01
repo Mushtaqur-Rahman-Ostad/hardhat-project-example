@@ -1,0 +1,54 @@
+{
+  "name": "ostad-smartcontract",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "deploy:ganache": "npx hardhat run --network ganache scripts/deploy/deploy.ts",
+    "exec:ganache:get:pricing": "npx hardhat run --network ganache scripts/exec/getPricing.ts",
+    "exec:ganache:set:pricing": "npx hardhat run --network ganache scripts/exec/setPricing.ts",
+    "deploy:goerli": "npx hardhat run --network goerli scripts/deploy/deploy.ts",
+    "exec:goerli:get:pricing": "npx hardhat run --network goerli scripts/exec/getPricing.ts",
+    "exec:goerli:set:pricing": "npx hardhat run --network goerli scripts/exec/setPricing.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Hardhat"
+  ],
+  "author": "Ostad",
+  "license": "ISC",
+  "engines": {
+    "npm": ">=9.7.2",
+    "node": ">=20.4.0",
+    "yarn": ">=1.22.19"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=16.0.0",
+    "@types/sinon-chai": "^3.2.3",
+    "chai": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "ethereum-waffle": "*",
+    "ethers": "^6.7.1",
+    "hardhat": "^2.17.4",
+    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  }
+}
