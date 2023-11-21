@@ -4,12 +4,8 @@ pragma solidity ^0.8.0;
 contract Pricing {
     uint256 private price;
 
-    constructor(uint256 _price) {
-        price = _price;
-    }
-
     function getPricing() public view returns (uint256) {
-        return price;
+        return price + 100;
     }
 
     function setPricing(uint256 _price) public {

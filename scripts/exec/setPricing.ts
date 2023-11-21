@@ -17,7 +17,7 @@ async function main() {
   let content = JSON.parse(fs.readFileSync(jsonPath).toString());
 
   const adminWallet = getWallet();
-  const pricing = getPricingInstance(content.ContractAddress, adminWallet);
+  const pricing = getPricingInstance(content.ContractAddressWithUpgradability, adminWallet);
 
   let result = await pricing.setPricing(newPrice, {
     gasPrice: gasPrice,

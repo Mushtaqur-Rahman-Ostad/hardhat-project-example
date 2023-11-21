@@ -13,7 +13,7 @@ async function main() {
 
   const adminWallet = getWallet()
 
-  const pricing = getPricingInstance(content.ContractAddress, adminWallet);
+  const pricing = getPricingInstance(content.ContractAddressWithUpgradability, adminWallet);
 
   let currentPrice = await pricing.getPricing();
 
